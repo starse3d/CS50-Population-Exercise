@@ -22,15 +22,14 @@ int main(void)
 
 
     // TODO: Calculate number of years until we reach threshold
-    int n = (x / 4) - (y / 3);
+    int i = (x / 4) - (y / 3);
 
-    // TODO: Print number of years
+    for (i = 9; i <= 9; i++)
 
-    if (n > y)
+     // TODO: Print number of years
     {
-        printf("The number of years is: %i\n", n);
+        printf("The number of years is: %i\n", i);
     }
-    else
-        int n = (n + 1);
+
 
 }
