@@ -1,7 +1,9 @@
 #include <cs50.h>
 #include <stdio.h>
 
+
 int main(void)
+
 {
     // TODO: Prompt for start size
     int start_pop;
@@ -18,18 +20,22 @@ int main(void)
     {
     end_pop = get_int("End size: ");
     }
-    while (end_pop <= start_pop);
+    while (start_pop >= end_pop);
 
 
     // TODO: Calculate number of years until we reach threshold
-    int i = (start_pop / 3) - (end_pop / 4);
+    int years = 0;
+    do
+    {
+        start_pop = start_pop + (start_pop / 3) - (start_pop / 4);
+        years++;
+    }
+    while (start_pop < end_pop);
 
-    for (i = 9; i >= 9; i++)   
 
     // TODO: Print number of years
     {
-        printf("Years: %i\n", i);
-    }
-
+        printf("Years: %i\n", years);
+     }
 
 }
